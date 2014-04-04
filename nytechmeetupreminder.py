@@ -97,7 +97,7 @@ if soup.find('a', {'class': 'omnCamp omnrv_rv13'}):
 
 ############################## Twilio ##############################
 #client = TwilioRestClient(account_sid, auth_token)
-#message = client.messages.create(to="+15167327149", from_="+16313507401", body=body_text)
+#message = client.messages.create(to="+1******", from_="+1*******", body=body_text)
 
 ############################## Email ##############################
 

@@ -4,8 +4,8 @@ from twilio.rest import TwilioRestClient
 import urllib2
 from datetime import datetime
 
-account_sid = 'ACdeed97873010f975fcf01195c3f25679'
-auth_token = '4a02c4878efa90590cb643430d0c141a'
+account_sid = '*********'
+auth_token = '**********'
 
 ############################## BeautifulSoup ##############################
 URL = 'http://www.meetup.com/ny-tech/'
@@ -93,7 +93,7 @@ if soup.find('a', {'class': 'omnCamp omnrv_rv13'}):
 				if current_hour == '12': #Only checking once per hour
 					body_text = "Reminder that NY Tech Meetup ticket release is occuring today @1pm"
 					client = TwilioRestClient(account_sid, auth_token)
-					message = client.messages.create(to="+15167327149", from_="+16313507401", body=body_text)
+					message = client.messages.create(to="+1*******", from_="+1*******", body=body_text)
 
 ############################## Twilio ##############################
 #client = TwilioRestClient(account_sid, auth_token)
